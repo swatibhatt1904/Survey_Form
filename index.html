@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- 
+
+Hello Camper!
+
+Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+<div class="container">
+  <header class="header">
+
+    <h1 id="title" class="text-center">SURVEY FORM</h1>
+    
+    <p id="description" class="description text-center"><br>Thank you for your precious time and helping us to know about yourself
+      
+      
+    </p>
+  </header>
+  <form id="survey-form" class = "survey-field">
+    <div class="form-group" >
+      
+      <label id="name-label" for="name">Name of the Candidate</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email of the Candidate</label>
+      
+      <input 
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue"></span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+        required
+      />
+    </div>
+    <div class="form-group" >
+      <p>Year of Graduation</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        
+        <option value="First Year">First Year</option>
+        <option value="Second Year">Second Year</option>
+        <option value="Third Year">Third Year</option>
+         <option value="Fourth Year">Fourth Year</option>
+       
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group" >
+      <p>
+       Gender of the Candidate
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+       
+        <option value="Male">Male </option>
+        <option value="Female">Female</option>
+        <option value="others">Others</option>
+        </select>
+    </div>
+ <div class="form-group" >
+      <p>Which are your preffered Programming Languages</p>
+      <label>
+        <input
+          name="C++"
+          value="C++"
+          type="radio"
+          class="input-radio"
+          checked
+        />C++</label
+      >
+      <label>
+        <input
+          name="Python"
+          value="Python"
+          type="radio"
+          class="input-radio"
+        />Python</label
+      >
+
+      <label
+        ><input
+          name="JAVA"
+          value="JAVA"
+          type="radio"
+          class="input-radio"
+        />JAVA</label
+      >
+    </div>
+    <!--<div class="form-group" >
+      <label id="number-label" for="number"
+        >How much time do you spend on internet?<span class="clue"></span></label
+      >
+      <input
+        type="number"
+        name="number"
+        id="number"
+             min = "0"
+        class="form-control"
+        placeholder="Enter here"
+        
+      />
+    </div>-->
+    <div class="form-group" >
+      <p>
+       Interested field of Technologies?
+        <span class="clue"> </span>
+      </p>
+
+      <label
+        ><input
+          name="Data Science"
+          value="Data Science"
+          type="checkbox"
+          class="input-checkbox"
+        />Data Science</label
+      >
+      <label>
+        <input
+          name="Web Development"
+          value="Web Development"
+          type="checkbox"
+          class="input-checkbox"
+        />Web Development</label
+      >
+      <label
+        ><input
+          name="Software Development"
+          value="Software Development"
+          type="checkbox"
+          class="input-checkbox"
+        />Software Development</label
+      >
+      <label
+        ><input
+          name="Software Testing"
+          value="Software Testing"
+          type="checkbox"
+          class="input-checkbox"
+        />Software Testing</label
+      >
+      <label
+        ><input
+          name="Ethical Hacking"
+          value="Ethical Hacking"
+          type="checkbox"
+          class="input-checkbox"
+        />Ethical Hacking</label
+      >
+      <label
+        ><input
+          name="Cyber Security"
+          value="Cyber Security"
+          type="checkbox"
+          class="input-checkbox"
+        />Cyber Security</label
+      >
+      
+      <label
+        ><input
+          name="prefer"
+          value="others"
+          type="checkbox"
+          class="input-checkbox"
+        />others</label
+      >
+    </div>
+
+    <div class="form-group" >
+      <p>Tell us about yourself</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter here..."
+      ></textarea>
+    </div>
+<div>
+      <p id='result'></p>
+    </div>
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
